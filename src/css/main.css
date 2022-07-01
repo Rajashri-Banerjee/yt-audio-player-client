@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,700&family=PT+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:wght@100&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,700&family=PT+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto&family=Roboto+Mono:wght@100&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Libre+Bodoni:ital,wght@1,700&family=PT+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto&family=Roboto+Mono:wght@100&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Handlee&family=Libre+Bodoni:ital,wght@1,700&family=PT+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto&family=Roboto+Mono:wght@100&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Handlee&family=Kotta+One&family=Libre+Bodoni:ital,wght@1,700&family=PT+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto&family=Roboto+Mono:wght@100&family=Secular+One&display=swap');
+
+.fox{
+    background-color: #ffff;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cookie{
+    padding: 10px;
+}
+
+.duck{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+body{
+    background: black;
+    background-position: center;
+    background-attachment: fixed;
+    /* repeat: no-repeat; */
+    background-size: cover;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+.playlist-card{
+    background-color: #211616;
+    padding: 10px 10px 22px 10px;
+    margin: 10px;
+    text-align: center;
+    color: #ffffffca;
+    backdrop-filter: blur(30px);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.playlist-poster{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.playlist-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.song-poster{
+    width: 177px;
+    height: 100px;
+}
+
+.songs-container{
+    display: flex;
+    background-color: #211616;
+    margin: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.song-title{
+    margin: 10px 10px;
+    color: rgba(246, 247, 245, 0.758);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.play{
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.fixed-player-container{
+    background: linear-gradient(180deg, #464274 0%, rgba(59, 57, 83, 0.535131) 46.49%, rgba(47, 47, 49, 0) 100%);
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.songs-list{
+    margin-bottom: 100px;
+}
+
+.ffff{
+    background-color: aliceblue;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 100px;
+}
+
+.songform{
+    background-color: #ffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ytlink-input{
+    margin: 5px;
+    padding: 5px 5px;
+    width: 70%;
+}
+
+.p-btn{
+    background-color: #280966;
+    color : white;
+    padding : 5px 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 5px rgb(61, 61, 61);
+}
+
+.auth-btn{
+    display: block;
+    /* margin: 20px auto; */
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.input-label{
+    flex : 1;
+}
+
+.s-btn{
+    border: none;
+    color : black; 
+    padding : 10px;
+    font-size:  medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(196, 170, 79, 0.59) 0%, #C5AD5C 100%);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.529)
+}
+
+.s-btn:hover{
+    background: linear-gradient(180deg, rgba(135, 114, 37, 0.59) 0%, #7f6c28 100%);;
+}
+
+.d-btn{
+    color: black;
+    border-color: black;
+    margin-left: 10px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: linear-gradient(185.19deg, #423730 4.16%, rgba(68, 53, 48, 0.04) 148.33%);
+    border: 0.2px solid rgb(96, 95, 95);
+
+}
+
+.playlist-name{
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.816);
+    font-family: 'Secular One', sans-serif; 
+}
+
+.pl-opener{
+    text-decoration: none;
+    border: 2px solid rgba(252, 248, 248, 0.778);
+    color: rgba(243, 240, 240, 0.788);
+    padding: 5px 20px;
+    background-color: #0000008C;
+    border: none;
+    box-shadow: 0px 2px 8px rgba(28, 27, 27, 0.529);
+}
+
+.pl-opener:hover{
+    background: #251e19;
+}
+
+.song-gif{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.trans-btn{
+    background: transparent;
+    border: none;
+}
+
+.form-container{
+    background-color: #F0F0F0;
+    max-width: 250px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 30px;
+}
+
+.form-container input,.form-container label{
+    display: block;
+    padding: 8px 5px;
+
+}
+
+.form-container a{
+    display: block;
+    text-align: center;
+}
+
+.header{
+    background-color: black;
+    padding: 0.5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically centralization */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.529);
+    border-bottom: 1px solid white;
+}
+
+.logo{
+    color: rgb(199, 199, 199);
+    font-family: 'Handlee', cursive;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.header-right a{
+    color: #ffff;
+}
+
+.home:hover{
+    color:rgb(201, 197, 197);
+    border-bottom: 1px solid rgb(201, 197, 197);
+}
+
+.home{
+    margin-left: 15px;
+}
+
+.home-heading{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.home-heading span{
+    display: block;
+    margin-bottom: 25px;
+}
+
+.home-des{
+    color: white;
+    margin-left: 100px;
+    font-size: large;
+    margin-bottom: 30px;
+}
+
+.home-des span{
+    display: block;
+    margin-top: 10px;
+}
+
+.get-started{
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    background-color: #37E3B0;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-family : 'Roboto', sans-serif;
+    font-weight: 400;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.529);
+}
+
+.get-started:hover{
+    background-color: #1d9b75;
+}
+
+.ill-container{
+    flex:  1; /* Covers the entire left over area */
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+.homepage{
+    display: flex;
+    width: 100%;
+}
+
+.username-box{
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+.login-heading{
+    font-family: 'Goudy Bookletter 1911', serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-left: 65px;
+    margin-top: 0px;
+}
+
+.reg-heading{
+    font-family: 'Goudy Bookletter 1911', serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+.logout-btn{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 3.5px;
+}
+
+.user-icon{
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.playlist-head{
+    font-family: 'Kotta One', serif;
+}
+
+.pl-title{
+    margin-top: 10px;
+}
+
+.btn2-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: linear-gradient(185.19deg, #423730 4.16%, rgba(68, 53, 48, 0.04) 148.33%);
+    border: 0.2px solid rgb(96, 95, 95);
+}
+
+.s2-btn{
+    border: none;
+    color : black; 
+    padding : 10px;
+    font-size:  medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(196, 170, 79, 0.59) 0%, #C5AD5C 100%);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.529)
+}
+
+.s2-btn:hover{
+    background: linear-gradient(180deg, rgba(135, 114, 37, 0.59) 0%, #7f6c28 100%);
+}
+
+.rhap_container{
+    background: transparent !important;
+}
+
+.rhap_time{
+    color : white;
+}
