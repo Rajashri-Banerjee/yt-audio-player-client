@@ -18,7 +18,7 @@ function Dashboard() {
 	const navigate = useNavigate()
 
 	const fetchplaylists = async() => {
-		const response = await axios.get('http://localhost:3001/user/playlists')
+		const response = await axios.get('/user/playlists')
 		setPlaylists(response.data.playlists)
 	}
 

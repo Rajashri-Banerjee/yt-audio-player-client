@@ -13,7 +13,7 @@ function Signup() {
 
     const signupHandler = async(e) => {
         const response = await axios ({
-            url: 'http://localhost:3001/user/signup',
+            url: '/user/signup',
             method: 'POST',
             data: {
                 fullname,

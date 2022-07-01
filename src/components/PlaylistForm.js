@@ -15,7 +15,7 @@ function PlaylistForm({setOpen,setPlaylists}) {
     const submitHandler = async(e) => {
         setLoading(true)
         const response = await axios({
-            url : 'http://localhost:3001/user/playlist',
+            url : '/user/playlist',
             method : 'POST',
             data : {
                 title : playlistname,

@@ -23,13 +23,13 @@ function Playlist() {
   const parsed = queryString.parse(location.search);
 
   const fetchplaylist =  async () => {
-    const response = await axios.get('http://localhost:3001/user/playlist?_id='+parsed._id)
+    const response = await axios.get('/user/playlist?_id='+parsed._id)
     setPlaylist(response.data.playlist)
   }
 
   const deleteHandler = async () => {
     const response = await axios({
-      url : 'http://localhost:3001/user/playlist',
+      url : '/user/playlist',
       method : 'DELETE',
       data : {
         id : parsed._id

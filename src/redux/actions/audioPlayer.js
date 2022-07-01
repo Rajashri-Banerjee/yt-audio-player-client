@@ -14,7 +14,7 @@ export async function pause() {
 }
 
 export async function playNow(url){
-    const response = await axios.get('http://localhost:3001/user/audioinfo?url='+ url)
+    const response = await axios.get('/user/audioinfo?url='+ url)
     store.dispatch({
         type : 'MUSIC_PLAYER_PLAY_NOW',
         payload : response.data

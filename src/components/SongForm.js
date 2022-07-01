@@ -13,7 +13,7 @@ function SongForm({id,setPlaylist,setOpen}) {
     const submitHandler = async() => {
         setLoading(true)
         const response = await axios({
-            url : 'http://localhost:3001/user/playlist',
+            url : '/user/playlist',
             method : 'PATCH',
             data : {
                 id : id,

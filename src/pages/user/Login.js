@@ -12,7 +12,7 @@ function Login() {
 
     const loginHandler = async() => {
         const response = await axios ({
-            url: 'http://localhost:3001/user/login',
+            url: '/user/login',
             method: 'POST',
             data: {
                 username,

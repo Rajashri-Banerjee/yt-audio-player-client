@@ -14,13 +14,13 @@ function SongItem({song,setSongdetail,setPlaylist,songdetail,playing}) {
   })
   
   const fetchsongdetail = async() => {
-    const response = await axios.get('http://localhost:3001/user/audioinfo?url='+song.url)
+    const response = await axios.get('/user/audioinfo?url='+song.url)
     setSongdetail(response.data)
   }
 
   const deleteHandler = async() => {
     const response = await axios({
-      url: 'http://localhost:3001/user/playlist-remove',
+      url: '/user/playlist-remove',
       method: 'PATCH',
       data: {
         id: song._id
